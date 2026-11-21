@@ -1,0 +1,62 @@
+{
+  "source_commit": "7744b6897441e9f4b86722ea8ebd63c593e42c8b",
+  "container_image_id": "sha256:e58f1978b0cbabf6d76b34e9bf6e4f26778df8014dcdd3be969789b946d417c5",
+  "vectors_addr": "0x4037c000",
+  "partitions": {
+    "nvs": {
+      "offset": 40960,
+      "size": 20480
+    },
+    "phy_init": {
+      "offset": 61440,
+      "size": 4096
+    },
+    "factory": {
+      "offset": 65536,
+      "size": 655360
+    },
+    "etc": {
+      "offset": 720896,
+      "size": 327680
+    },
+    "linux": {
+      "offset": 1048576,
+      "size": 2752512
+    },
+    "rootfs": {
+      "offset": 3801088,
+      "size": 4521984
+    },
+    "cred": {
+      "offset": 8323072,
+      "size": 65536
+    }
+  },
+  "sha256": {
+    "bootloader.bin": "ffa14c0c0008032e63c53385a234c2a023bb4e45a6cf56298001c1ef4c1b9a50",
+    "partition-table.bin": "a80f1d8e13316723a533c5111a78c403d4aac7bcc7c13412176b9bdd9946d558",
+    "network_adapter.bin": "66c8c4fd2f5dcb470314e810a1a7b6ba8742132c5fd0a9ff6e16e5a9d0f27a92",
+    "etc.jffs2": "3b35a2d33b134a8fd15197ef80927301366227c606c0476b485b9b7c9c3b869e",
+    "xipImage": "64652c903be3c8f0d2645573faa86f7ca68e87adacf9fb46f29ecad2e3d9f84a",
+    "rootfs.cramfs": "6965b9be54f86487fd974b90a2bc008a2af6baf7ee9fe448cc30a54490c43bb7",
+    "cred.bin": "fbd7cceab2e0f5696b4628188d3d6e4ec3f4222c02638db114d8611cb3b7f2c3",
+    "linux-esp32s3-xiao-8m-full.bin": "91420c2dfc008671e337403a112e978097ef8c76b020a2c604b0f4e56554a684"
+  },
+  "build_method": "Clean sources and Linux toolchain; no prebuilt project images or experiment binaries",
+  "board_verification": "pending",
+  "default_stack_binaries": [
+    "usr/bin/curl",
+    "usr/bin/espctl",
+    "usr/bin/ldd",
+    "usr/sbin/dropbear",
+    "usr/sbin/wpa_cli",
+    "usr/sbin/wpa_supplicant"
+  ],
+  "configuration_sha256": {
+    "toolchain.config": "4de1e0e19aa45a42f46c1931dcfe044b019c3334a1de18771181e425dc3694fb",
+    "buildroot.config": "f86a60b79de9a6c254833e7e479ed80f9e5bdac55a74408f6d072621d1195291",
+    "firmware.config": "ca9d8a460c25bab22a944d22615d6b2f00d873728f25a8248f1f84213a6b5303",
+    "kernel.config": "916c6eb1984710801da86a1767c77fc3b5d9f9ceaca0360540934c1ce20e836c",
+    "busybox.config": "5e52286da53aa7120f6c7b4bd8b889a5d463b64514682dd1990407300187f32c"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "programs": [
+    "dash",
+    "micropython"
+  ],
+  "image_bytes": 4489216,
+  "free_bytes": 32768,
+  "sha256": "6965b9be54f86487fd974b90a2bc008a2af6baf7ee9fe448cc30a54490c43bb7",
+  "binaries": {
+    "dash": {
+      "path": "/usr/bin/dash",
+      "elf_bytes": 94796,
+      "sha256": "740c58ab0924bae65fee47af450a983d8b01a9d2db97defcca970f5803b3f5e5"
+    },
+    "micropython": {
+      "path": "/usr/bin/micropython",
+      "elf_bytes": 311788,
+      "sha256": "1b5dfafd00276d2de6fd0ee86e561b2a4921dc95434d8645bab205e4b6844c4a"
+    }
+  },
+  "sd_payload": {
+    "archive_bytes": 40816,
+    "paths": [
+      "usr/bin/dtach",
+      "usr/bin/vbat",
+      "usr/lib/micropython",
+      "usr/share/ca-certificates"
+    ]
+  }
+}
